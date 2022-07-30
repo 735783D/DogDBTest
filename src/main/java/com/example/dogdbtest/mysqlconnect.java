@@ -42,7 +42,7 @@ public class mysqlconnect {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()){
-                list.add(new dogs(Integer.parseInt(rs.getString("id")), Integer.parseInt(rs.getString("lifespan")), rs.getString("breed"), Double.parseDouble(rs.getString("price")), Boolean.parseBoolean(rs.getString("vaccinated"))));
+                list.add(new dogs(Integer.parseInt(rs.getString("id")), Integer.parseInt(rs.getString("lifespan")), rs.getString("breed"), Double.parseDouble(rs.getString("price")), Boolean.parseBoolean(rs.getString("vaccinated")), rs.getString("breed")));
             }
         }catch (Exception e){
 

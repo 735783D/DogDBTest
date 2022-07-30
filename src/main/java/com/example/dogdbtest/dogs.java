@@ -6,11 +6,11 @@ public class dogs {
     String breed, special;
     double price;
 
-    public dogs(int id, int lifespan, String breed, double price, boolean vaccinated) {
+    public dogs(int id, int lifespan, String breed, double price, boolean vaccinated, String special ) {
         this.id = id;
         this.lifespan = lifespan;
         this.breed = breed;
-        //this.special = special;
+        this.special = special;
         this.price = price;
         this.vaccinated = vaccinated;
     }
@@ -41,13 +41,13 @@ public class dogs {
         this.breed = breed;
     }
 
-//    public String getSpecial() {
-//        return special;
-//    }
+    public String getSpecial() {
+        return special;
+    }
 
-//    public void setSpecial(String special) {
-//        this.special = special;
-//    }
+    public void setSpecial(String special) {
+        this.special = special;
+    }
 
     public double getPrice() {
         return price;
